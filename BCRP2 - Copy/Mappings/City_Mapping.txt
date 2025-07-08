@@ -1,0 +1,38 @@
+Araria - 0
+Arwal - 1
+Aurangabad - 2
+Banka - 3
+Begusarai - 4
+Bhagalpur - 5
+Bhojpur - 6
+Buxar - 7
+Darbhanga - 8
+East Champaran (Motihari) - 9
+Gaya - 10
+Gopalganj - 11
+Jamui - 12
+Jehanabad - 13
+Kaimur (Bhabua) - 14
+Katihar - 15
+Khagaria - 16
+Kishanganj - 17
+Lakhisarai - 18
+Madhepura - 19
+Madhubani - 20
+Munger - 21
+Muzaffarpur - 22
+Nalanda - 23
+Nawada - 24
+Patna - 25
+Purnia - 26
+Rohtas - 27
+Saharsa - 28
+Samastipur - 29
+Saran (Chhapra) - 30
+Sheikhpura - 31
+Sheohar - 32
+Sitamarhi - 33
+Siwan - 34
+Supaul - 35
+Vaishali (Hajipur) - 36
+West Champaran (Bettiah) - 37

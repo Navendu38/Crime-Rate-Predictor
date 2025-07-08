@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Rate Prediction</title>
+   
+    
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class = "title">Crime Rate Predictor</h1>
+        <h2 class = "tagline">Unlock safety: Reduce crime rate together</h2>
+    </header>
+
+    <section class="section1">
+        <form action="/predict" method="POST">
+            <table class="table1">
+                <tr>
+                    <td class="label">
+                        <label>Select City Name</label>
+                    </td>
+                    <td class="sel">
+                        <select name="city">
+                            <option value="0">Araria</option>
+                            <option value="1">Arwal</option>
+                            <option value="2">Aurangabad</option>
+                            <option value="3">Banka</option>
+                            <option value="4">Begusarai</option>
+                            <option value="5">Bhagalpur</option>
+                            <option value="6">Bhojpur</option>
+                            <option value="7">Buxar</option>
+                            <option value="8">Darbhanga</option>
+                            <option value="9">East Champaran (Motihari)</option>
+                            <option value="10">Gaya</option>
+                            <option value="11">Gopalganj</option>
+                            <option value="12">Jamui</option>
+                            <option value="13">Jehanabad</option>
+                            <option value="14">Kaimur (Bhabua)</option>
+                            <option value="15">Katihar</option>
+                            <option value="16">Khagaria</option>
+                            <option value="17">Kishanganj</option>
+                            <option value="18">Lakhisarai</option>
+                            <option value="19">Madhepura</option>
+                            <option value="20">Madhubani</option>
+                            <option value="21">Munger</option>
+                            <option value="22">Muzaffarpur</option>
+                            <option value="23">Nalanda</option>
+                            <option value="24">Nawada</option>
+                            <option value="25">Patna</option>
+                            <option value="26">Purnia</option>
+                            <option value="27">Rohtas</option>
+                            <option value="28">Saharsa</option>
+                            <option value="29">Samastipur</option>
+                            <option value="30">Saran (Chhapra)</option>
+                            <option value="31">Sheikhpura</option>
+                            <option value="32">Sheohar</option>
+                            <option value="33">Sitamarhi</option>
+                            <option value="34">Siwan</option>
+                            <option value="35">Supaul</option>
+                            <option value="36">Vaishali (Hajipur)</option>
+                            <option value="37">West Champaran (Bettiah)</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">
+                        <label>Select Crime Type</label>
+                    </td>
+                    <td class="sel">
+                        <select name="crime">
+                            <option value="0">Attempt to Murder</option>
+                            <option value="1">Burglary</option>
+                            <option value="2">Cruelty by Husband/Relatives</option>
+                            <option value="3">Dacoity</option>
+                            <option value="4">Dowry Deaths</option>
+                            <option value="5">Kidnapping & Abduction</option>
+                            <option value="6">Murder </option>
+                            <option value="7">Rape </option>
+                            <option value="8">Riots </option>
+                            <option value="9">Robbery</option>
+                            <option value="10">Theft</option>
+                            <option value="11">Total Violent Crimes</option>
+                        </select>
+                    </td>                  
+                </tr>
+
+                <tr>
+                    <td class="label">
+                        <label>Select Year</label>
+                    </td>
+                    <td class="sel" >
+                        <select name="year" id="year-dropdown"></select>
+                    </td> 
+                </tr>
+            </table>
+
+            <div class="button" >
+                <input type="submit" class="btn id="predict_button"" value="Predict" >
+            </div>               
+        </form>          
+    </section>    
+
+    <section>
+        <h2 id="about">About the Application</h2>
+
+        <p id="introduction">
+            Crime rate prediction has become an important tool for law enforcement agencies 
+            to help them better understand patterns of crime and anticipate where crime is 
+            likely to occur. By predicting future crime trends, law enforcement agencies can 
+            better allocate resources to areas that are likely to experience increases in 
+            criminal activity. This could lead to a decrease in crime overall, as well as 
+            an increase in public safety. Additionally, crime rate prediction can help police 
+            departments develop better strategies for responding to crime as it happens.
+            <br> <br>
+            The dataset is prepared manually based on the publication available on the Indian 
+            National Crime Rate Bureau (NCRB) official website. This data provides statistics 
+            on crimes committed in Bihar cities during the year 2018 to 2021. 
+            With the help of this application, we can predict the crime rates for 12 different 
+            categories of crime that are likely to occur in Bihar 38  cities over 
+            the next few years. It includes statistics on 12 different categories ofAttempt to Murder, 
+            Burglary, Cruelty by Husband/Relatives, Dacoity, Dowry Deaths, Kidnapping & Abduction,
+             Murder, Rape, Riots, Robbery, Theft, Total Violent Crimes 
+            <br><br>
+            The system uses scikit-learn's Random Forest Regression model, which takes year, 
+            city name, and crime type data as inputs. Random Forest Regression is a type of 
+            an ensemble learning techniques that can be used to predict continuous values 
+            from a collection of data. It works by creating a large number of "decision trees" 
+            which each make a prediction about the target variable. Then it averages all the 
+            predictions to come up with a final prediction. This makes it more accurate than 
+            a single decision tree. The model predicts the crime rate with an accuracy of 93.20% 
+            on testing dataset.
+            <br><br>
+
+           
+                .
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2025 Crime Rate Predictor. All rights reserved.</p>
+            
+    <script src="static/main.js"></script> 
+    <link rel="stylesheet" href="static/styles.css">
+   
+</body>
+</html>

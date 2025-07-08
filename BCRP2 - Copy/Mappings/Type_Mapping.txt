@@ -1,0 +1,12 @@
+Attempt to Murder - 0
+Burglary - 1
+Cruelty by Husband/Relatives - 2
+Dacoity - 3
+Dowry Deaths - 4
+Kidnapping & Abduction - 5
+Murder - 6
+Rape - 7
+Riots - 8
+Robbery - 9
+Theft - 10
+Total Violent Crimes - 11

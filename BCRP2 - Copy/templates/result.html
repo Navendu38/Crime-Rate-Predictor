@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Rate Prediction</title>
+    
+    
+   <link rel="stylesheet" href="static/style.css">
+
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class = "title">Crime Rate Predictor</h1>
+        <h2 class = "tagline">Unlock safety: Reduce crime rate together</h2>
+    </header>       
+    
+    <section class="prediction">
+        <table class="table2">
+            <tr class="r1">
+                <td class="label">
+                    <label>Selected City Name :</label>
+                </td>
+                <td class="sel">
+                    <select>
+                        <option value="selected">{{city_name}}</option>
+                </td>
+            </tr>
+            <tr class="r1">
+                <td class="label">
+                    <label>Selected Crime Type :</label>
+                </td>
+                <td class="sel">
+                    <select >
+                        <option value="selected">{{crime_type}}</option>
+                </td>
+            </tr>
+            <tr class="r1">
+                <td class="label">
+                    <label>Selected Year :</label>
+                </td>
+                <td class="sel">
+                    <select>
+                        <option value="selected">{{year}}</option>
+                </td>
+            </tr>
+        </table>
+
+        <table class="table3">         
+            
+            <tr class="r2""> 
+                <td class="result">Prediction :</td>
+                <td class="result">{{crime_status}}</td>
+            </tr>
+            <tr class="r2">
+                <td class="result">Estimated Crime Rate :</td>
+                <td class="result">{{crime_rate}}</td>
+            </tr>
+            <tr class="r2">
+                <td class="result">Estimated Number of Cases  :</td>
+                <td class="result">{{cases}}</td>
+            </tr>
+            <tr class="r2">
+                <td class="result">Population (Lakh) :</td>
+                <td class="result">{{population}}</td>
+            </tr>
+        </table>
+
+        <div class="button2" >
+            <a href="http://127.0.0.1:5000">
+                <input type="submit" class="btn id="check_again"" value="Let's Check Again" >
+            </a>            
+        </div> 
+        
+    </section>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2025 Crime Rate Predictor. All rights reserved.</p>
+                </a>
+            </div>
+        </div>       
+    </footer>    
+</body>
+</html>
